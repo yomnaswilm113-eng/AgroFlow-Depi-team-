@@ -39,3 +39,10 @@
 ## Known issues (for Cleaning Engineer)
 - Timestamp range/row count suggests possible day/month parsing mix-up.
 - Dataset 2 locations/units are unknown; the two datasets do not share a time period or location.
+
+### 1b. Open-Meteo extended (multi-location)
+- Locations: Dakahlia (31.04, 31.38), Gharbia (30.79, 31.00), Kafr El Sheikh (31.11, 30.94)
+- Period: 2021-01-01 to 2025-12-31, hourly (131,472 rows, 14 columns)
+- Script: ingest_weather_multi.py
+- File: data/raw/weather_soil_delta_multi.csv
+- Extra columns: location, latitude, longitude, shortwave_radiation (W/m2), wind_speed_10m (km/h), soil_moisture_7_to_28cm (m3/m3), soil_temperature_7_to_28cm (C)
